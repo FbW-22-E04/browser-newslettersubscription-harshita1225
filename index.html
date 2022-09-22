@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Subscription Overlay</title>
+
+    <style>
+      form {
+        margin: 20rem auto;
+        background-color: gray;
+        font-size: 1rem;
+        font-family: Cambria, serif sans-serif;
+        width: 30rem;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      input {
+        padding: 0.5rem;
+        text-align: center;
+        width: 50%;
+      }
+
+      button {
+        margin: 1rem;
+        background-color: rgb(130, 199, 199);
+        border-radius: 5%;
+        width: 20%;
+        border: 1px solid blue;
+        font-family: Cambria, serif sans-serif;
+      }
+
+      .btn-close {
+        background-color: rgb(173, 115, 8);
+        width: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="method" class="popup">
+        <button class="btn-close" type="button">X</button>
+        <p class="message">
+          To stay up to date with important relaeses, Subscribe!!
+        </p>
+
+        <input class="email" type="email" placeholder="yourEmail@example.com" />
+
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
